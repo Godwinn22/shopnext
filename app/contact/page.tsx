@@ -1,9 +1,7 @@
-import React from 'react'
-
-const page = () => {
-  return (
-	<div>Contact Us</div>
-  )
+export default function Contact() {
+    return (
+        <main>
+            <h1>Contact Us</h1>
+        </main>
+    );
 }
-
-export default page
