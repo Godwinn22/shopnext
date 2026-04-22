@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
-            <body className="font-inter">{children}</body>
+            <body className="font-plus-jakarta">{children}</body>
         </html>
     );
 }
