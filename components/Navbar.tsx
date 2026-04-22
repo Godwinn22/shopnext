@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className="w-full border-b border-neutral bg-white px-6 py-4">
             <div className="mx-auto flex max-w-6xl items-center justify-between">
                 {/* Brand */}
-                <Link href="/" className="text-xl font-bold text-dark">
+                <Link href="/" className="text-xl font-bold text-navy">
                     ShopNext
                 </Link>
 
