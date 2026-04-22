@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Container from "./Container";
 
 const links = [
     { href: "/", label: "Home" },
@@ -16,7 +17,7 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <nav className="w-full border-b border-neutral bg-white px-6 py-4">
-            <div className="mx-auto flex max-w-6xl items-center justify-between">
+            <Container className="flex items-center justify-between">
                 {/* Brand */}
                 <Link href="/" className="text-xl font-bold text-navy">
                     ShopNext
@@ -64,7 +65,7 @@ export default function Navbar() {
                     <span className="block h-0.5 w-6 bg-gray-900" />
                     <span className="block h-0.5 w-6 bg-gray-900" />
                 </button>
-            </div>
+            </Container>
 
             {/* Mobile Menu */}
             {menuOpen && (
