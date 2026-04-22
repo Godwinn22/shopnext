@@ -1,3 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  /* ---- Colors ---- */
+  --color-primary: #D3045D;
+  --color-dark: #2B384C;
+  --color-navy: #0C287B;
+  --color-neutral: #D1BBAD;
+  --color-neutral-light: #f5f0ec;
 
+  /* ---- Fonts ---- */
+  --font-inter: var(--font-inter);
+  --font-plus-jakarta: var(--font-plus-jakarta);
+}
