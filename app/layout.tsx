@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
-            <body className="font-plus-jakarta">{children}</body>
+            <body className="font-plus-jakarta">
+                <Navbar />
+                {children}
+            </body>
         </html>
     );
 }
