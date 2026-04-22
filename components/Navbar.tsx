@@ -15,10 +15,10 @@ export default function Navbar() {
     const pathname = usePathname();
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <nav className="w-full border-b border-gray-200 bg-white px-6 py-4">
+        <nav className="w-full border-b border-neutral bg-white px-6 py-4">
             <div className="mx-auto flex max-w-6xl items-center justify-between">
                 {/* Brand */}
-                <Link href="/" className="text-xl font-bold text-gray-900">
+                <Link href="/" className="text-xl font-bold text-dark">
                     ShopNext
                 </Link>
 
@@ -30,7 +30,7 @@ export default function Navbar() {
                             href={link.href}
                             className={`text-sm font-medium transition-colors ${
                                 pathname === link.href
-                                    ? "text-black font-semibold"
+                                    ? "text-primary font-semibold"
                                     : "text-gray-500 hover:text-black"
                             }`}
                         >
@@ -49,7 +49,7 @@ export default function Navbar() {
                     </Link>
                     <Link
                         href="/register"
-                        className="rounded-full bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800"
+                        className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white transition-colors duration-400 ease-in-out hover:bg-navy"
                     >
                         Sign Up
                     </Link>
@@ -92,7 +92,7 @@ export default function Navbar() {
                         </Link>
                         <Link
                             href="/register"
-                            className="rounded-full bg-black px-4 py-2 text-center text-sm font-medium text-white"
+                            className="rounded-full bg-primary px-4 py-2 text-center text-sm font-medium text-white"
                         >
                             Sign Up
                         </Link>

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-plus-jakarta" });
 
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
+        <html lang="en" className={`${plusJakartaSans.variable}`}>
             <body className="font-plus-jakarta">
                 <Navbar />
                 {children}
