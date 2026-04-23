@@ -1,9 +1,33 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-plus-jakarta" });
+const plusJakarta = localFont({
+    src: [
+        {
+            path: "../public/fonts/PlusJakartaSans-Regular.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "../public/fonts/PlusJakartaSans-Medium.ttf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "../public/fonts/PlusJakartaSans-SemiBold.ttf",
+            weight: "600",
+            style: "normal",
+        },
+        {
+            path: "../public/fonts/PlusJakartaSans-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        },
+    ],
+    variable: "--font-plus-jakarta",
+});
 
 export const metadata: Metadata = {
     title: "ShopNext",
@@ -17,7 +41,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${plusJakartaSans.variable}`}>
+        <html lang="en" className={`${plusJakarta.variable}`}>
             <body className="font-plus-jakarta">
                 <Navbar />
                 {children}
