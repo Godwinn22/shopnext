@@ -16,7 +16,7 @@ export default function Navbar() {
     const pathname = usePathname();
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <nav className="w-full border-b border-neutral bg-white px-6 py-4">
+        <nav className="w-full border-b border-neutral bg-white py-4">
             <Container className="flex items-center justify-between">
                 {/* Brand */}
                 <Link href="/" className="text-xl font-bold text-navy">
